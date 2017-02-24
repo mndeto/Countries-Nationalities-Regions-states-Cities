@@ -4,15 +4,14 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Region extends Migration
-{
+class Region extends Migration {
+
     /**
      * Run the migrations.
      *
      * @return void
      */
-    public function up()
-    {
+    public function up() {
         Schema::create('regions', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->charset = 'utf8';
@@ -35,4 +34,5 @@ class Region extends Migration
     public function down() {
         Schema::dropIfExists('regions');
     }
+
 }
